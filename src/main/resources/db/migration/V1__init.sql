@@ -1,7 +1,6 @@
-    create table products (id bigserial primary key, title varchar(255), price int);
-    insert into products (title, price) values
-    ('Milk', 80), ('Bread', 25), ('Cheese', 300);
-
+    create table products (id bigserial primary key, title varchar(255), price int, stockStatus varchar(255);
+    insert into products (title, price, stockStatus) values
+    ('Milk', 80, '10 Pieces in stock'), ('Bread', 25, 'More than 15 pieces in stock'), ('Cheese', 300, 'Not in stock');
 
 create table users
 (
