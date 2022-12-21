@@ -12,7 +12,6 @@ import java.util.List;
 @RequiredArgsConstructor
 public class ProductService {
     private final ProductRepository productRepository;
-
     public List<Product> findAll() {
         return productRepository.findAll();
     }
